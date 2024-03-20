@@ -12,6 +12,7 @@ export const substitutes = {
     "com.github.Aylur.ags": "controls-symbolic",
     "Microsoft-edge": "com.microsoft.Edge",
     "upc.exe": "lutris_ubisoft-connect",
+    //"steam": "com.microsoft.Edge",
 }
 
 export default {
@@ -111,7 +112,7 @@ export default {
         recording: "media-record-symbolic",
     },
     notifications: {
-        noisy: "org.gnome.Settings-notifications-symbolic",
+        noisy: "preferences-system-notifications-symbolic",
         silent: "notifications-disabled-symbolic",
         message: "chat-bubbles-symbolic",
     },

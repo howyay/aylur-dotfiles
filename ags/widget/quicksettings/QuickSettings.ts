@@ -56,8 +56,8 @@ const Settings = () => Widget.Box({
             [WifiSelection, BluetoothDevices],
         ),
         Row(
-            [ProfileToggle, DarkModeToggle],
-            [ProfileSelector],
+            [DarkModeToggle],
+            //[ProfileSelector],
         ),
         Row([MicMute, DND]),
         Widget.Box({
