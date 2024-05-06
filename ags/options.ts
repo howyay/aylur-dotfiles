@@ -210,22 +210,6 @@ const options = mkOptions(OPTIONS, {
         },
     },
 
-    osd: {
-        progress: {
-            vertical: opt(true),
-            pack: {
-                h: opt<"start" | "center" | "end">("end"),
-                v: opt<"start" | "center" | "end">("center"),
-            },
-        },
-        microphone: {
-            pack: {
-                h: opt<"start" | "center" | "end">("center"),
-                v: opt<"start" | "center" | "end">("end"),
-            },
-        },
-    },
-
     notifications: {
         position: opt<Array<"top" | "bottom" | "left" | "right">>(["top", "right"]),
         blacklist: opt(["Spotify"]),

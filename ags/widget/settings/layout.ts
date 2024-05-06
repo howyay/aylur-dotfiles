@@ -15,7 +15,6 @@ const {
     overview: ov,
     powermenu: pm,
     quicksettings: qs,
-    osd,
     hyprland: h,
 } = options
 
@@ -138,11 +137,6 @@ export default [
             Row({ opt: qs.avatar.size, title: "Avatar Size" }),
             Row({ opt: qs.media.monochromeIcon, title: "Media Monochrome Icons" }),
             Row({ opt: qs.media.coverSize, title: "Media Cover Art Size" }),
-        ),
-        Group("On Screen Indicator",
-            Row({ opt: osd.progress.vertical, title: "Vertical" }),
-            Row({ opt: osd.progress.pack.h, title: "Horizontal Alignment", type: "enum", enums: ["start", "center", "end"] }),
-            Row({ opt: osd.progress.pack.v, title: "Vertical Alignment", type: "enum", enums: ["start", "center", "end"] }),
         ),
     ),
 ] as const
