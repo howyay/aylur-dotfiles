@@ -27,14 +27,24 @@ window.popup {
         padding: $popover-padding;
         border: $border-width solid $popover-border-color;
 
+        padding:4px;
+	      border-radius:8px;
+
         separator {
             background-color: $border-color;
+            margin: 4px;
         }
 
         menuitem {
             @include button;
             padding: $spacing * .5;
             margin: ($spacing * .5) 0;
+
+            margin: 0px;
+            padding: 3px 3px 4px 3px;
+            background: none;
+            box-shadow: none;
+            border-radius:4px;
 
             &:first-child {
                 margin-top: 0;
@@ -64,4 +74,8 @@ tooltip {
         margin: 4px;
         box-shadow: 0 0 3px 0 $shadow-color;
     }
+}
+
+menu menuitem:hover {
+	background: lightgrey;
 }
