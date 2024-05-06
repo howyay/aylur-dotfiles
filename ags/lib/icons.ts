@@ -11,6 +11,7 @@ export const substitutes = {
     "com.github.Aylur.ags-symbolic": "controls-symbolic",
     "com.github.Aylur.ags": "controls-symbolic",
     "Microsoft-edge": "com.microsoft.Edge",
+    "microsoft-edge": "com.microsoft.Edge",
     "upc.exe": "lutris_ubisoft-connect",
     //"steam": "com.microsoft.Edge",
 }
