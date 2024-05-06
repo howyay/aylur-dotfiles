@@ -1,10 +1,7 @@
 import type Gtk from "gi://Gtk?version=3.0"
-import { ProfileSelector, ProfileToggle } from "./widgets/PowerProfile"
 import { Header } from "./widgets/Header"
 import { Volume, Microhone, SinkSelector, AppMixer } from "./widgets/Volume"
 import { Brightness } from "./widgets/Brightness"
-import { NetworkToggle, WifiSelection } from "./widgets/Network"
-import { BluetoothToggle, BluetoothDevices } from "./widgets/Bluetooth"
 import { DND } from "./widgets/DND"
 import { DarkModeToggle } from "./widgets/DarkMode"
 import { MicMute } from "./widgets/MicMute"
@@ -52,12 +49,7 @@ const Settings = () => Widget.Box({
             ],
         }),
         Row(
-            [NetworkToggle, BluetoothToggle],
-            [WifiSelection, BluetoothDevices],
-        ),
-        Row(
             [DarkModeToggle],
-            //[ProfileSelector],
         ),
         Row([MicMute, DND]),
         Widget.Box({
